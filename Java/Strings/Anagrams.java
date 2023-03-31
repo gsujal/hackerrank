@@ -23,13 +23,14 @@ public class Anagrams {
 	   B=B.toLowerCase();
 	   boolean f = false;
 	  char[] c = A.toCharArray();
-	  Arrays.sort(c);
+	  java.util.Arrays.sort(c);
 	  char[] d = B.toCharArray();
-	  Arrays.sort(d);
+	  java.util.Arrays.sort(d);
 	  String a = new String (c);
       String b = new String (d);
       if (a.equals(b)) {
     	  f=true;
+	  return f;
       }
       return f;
    
